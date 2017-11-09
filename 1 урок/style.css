@@ -1,0 +1,53 @@
+[style]
+	h1 { 
+        text-align: center;
+        color: #013b3b;
+        font-size: 30px;
+    }
+	h2 div { 
+        color: rgb(6, 65, 6);
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-width:4px;
+        border-bottom:4px;
+        border-color: rgb(131, 95, 114);
+        width: 300px;
+        height: 100px;
+    }
+    p {
+        color: rgb(119, 6, 248);
+        font-size: 20px;
+        text-indent:  50px;  
+    }
+    body {
+        margin: 0;
+    }
+    .parent{
+        margin: 20%;
+        background: rgb(12, 22, 34);
+        padding:10px; 
+    }
+    .child{
+     border: 3px solid#666;
+     padding:10px;
+     margin: 10%;     
+    }
+    .brd{
+        border:5px double black;
+        background: rgb(2, 46, 2);
+        padding: 10px;
+    }
+    .layerl{
+        color: rgb(37, 9, 68);
+        font-size: 20px;
+        text-indent:  50px;
+        float: left;
+        background: rgb(149, 235, 192);
+        border: 1px solid black;
+        padding: 10px
+        margin-right: 20%;
+        widht: 40%;
+    }
+    
+	

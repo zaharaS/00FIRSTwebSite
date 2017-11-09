@@ -1,0 +1,13 @@
+.flax-container{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        }
+    .flax-element:first-child{
+        order: 0;
+        margin: auto;
+    }
+    .element-1{
+      order: 1;  
+    }
