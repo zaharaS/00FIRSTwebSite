@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Модальное окно</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styleMO.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Вот такой вот проект</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Привет, человечество!</h1>
+        <p>Главная цель цикла «Человечество» — рассказать историю всех нас, семи миллиардов жителей Земли так, как ее еще не рассказывали. Это история о том, как мы стали такими, какие мы теперь. На протяжении этого цикла вы увидите самых разных людей, которых объединяет то, что они меняли правила игры.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Смоти фильм &raquo;</a></p>
+      </div>
+    </div>
+
+    <div id="win">
+        <div class="overlay"></div>
+           <div class="visible">
+              <button type="button" class="close" aria-hidden="true" onClick="getElementById('win').style.display='none';">&times;</button>
+             <h2>Привет!</h2>
+                <div class="content">
+                 <p>Один французский писатель ужасно не любил Эйфелеву башню, но постоянно там обедал (на первом уровне башни). Как он это объяснял?</p>
+                 <p><a href=https://otvet.imgsmail.ru/download/226269297_603b831fbb876a708ec710fd7d7ddcba_800.jpg>Догадался?! Енота тебе в карму!:)</a></p>
+               </div>
+               <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Нет ((</button>
+                <button type="button" class="btn btn-primary">ДА! ))</button>
+              </div>
+           </div>
+     </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Древнейшая история</h2>
+          <p>После формирования человека, антропологически неотличимого от современного, начинается история человечества. Хотя для понимания многих аспектов жизни человека, его поведения (как физиологического, так и психо-эмоционального) необходимо знать и филогенетическую историю. </p>
+          <p><a class="btn btn-default" href="#" role="button">Погрузись в прошлое &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Наши дни</h2>
+          <p>Человеку удалось создать разветвлённую, сложную цивилизацию, что достоверно не удалось сделать никакому другому виду. Благодаря научным открытиям человеку удалось выживать после столкновения с самыми агрессивными средами обитания, и даже освоить некоторые из них. Есть основания полагать, что этот список расширится, включив и космическую среду. </p>
+          <p><a class="btn btn-default" href="#" role="button">Узнай еще больше &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Гипотетическое будущее</h2>
+          <p>Многие науки, включая политологию и историю, изучают развитие общества. Одними из самых радикальных изменений человечества, которые могут возникнуть из-за политических причин, можно считать третью мировую войну, объединение всех государств в одно, установление однородной формы власти и способа производства, например, путём создания мирового тоталитарного государства или с приходом мирового коммунизма.</p>
+          <p><a class="btn btn-default" href="#" role="button">Подумай о будущем &raquo;</a></p>
+        </div>
+      </div>
+      <label for="modal-1"><p style="width: 200px; cursor: pointer; padding:10px 20px; color:#fff; background-color:#e62929;">Модальное окно</p></label>
+      <div class="modal">
+      <p style="width: 200px; cursor: pointer; padding:10px 20px; color:#fff; background-color:#e62929;" onclick='btn()'>Onclick</p>
+      <div class="modal">
+      <input class="modal-open" id="modal-1" type="checkbox" hidden>
+      <div class="modal-wrap" aria-hidden="true" role="dialog">
+      <label class="modal-overlay" for="modal-1"></label>
+      <div class="modal-dialog">
+      <div class="modal-body">
+      <p>У лукоморья дуб зелёный;<br>
+      Златая цепь на дубе том:<br>
+      И днём и ночью кот учёный<br>
+      Всё ходит по цепи кругом;<br>
+      Идёт направо - песнь заводит,<br>
+      Налево - сказку говорит.<br>
+      Там чудеса: там леший бродит,<br>
+      Русалка на ветвях сидит;<br>
+      Там на неведомых дорожках<br>
+      Следы невиданных зверей;<br>
+      Избушка там на курьих ножках<br>
+      Стоит без окон, без дверей;<br>
+      Там лес и дол видений полны;<br>
+      Там о заре прихлынут волны<br>
+      На брег песчаный и пустой,<br>
+      И тридцать витязей прекрасных<br>
+      Чредой из вод выходят ясных,<br>
+      И с ними дядька их морской;<br>
+      Там королевич мимоходом<br>
+      Пленяет грозного царя;<br>
+      Там в облаках перед народом<br>
+      Через леса, через моря<br>
+      Колдун несёт богатыря;<br>
+      В темнице там царевна тужит,<br>
+      А бурый волк ей верно служит;<br>
+      Там ступа с Бабою Ягой<br>
+      Идёт, бредёт сама собой,<br>
+      Там царь Кащей над златом чахнет;<br>
+      Там русский дух... там Русью пахнет!<br>
+      И там я был, и мёд я пил;<br>
+      У моря видел дуб зелёный;<br>
+      Под ним сидел, и кот учёный<br>
+      Свои мне сказки говорил.<br></p>
+      </div>
+      </div>
+<!-- Button trigger modal -->
+<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Посмотреть демо
+  </button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+  </div>
+  <div class="modal-body">
+    <p>Переполнение текстом, чтобы показать поведение с прокруткой
+            
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+            
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+            
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+        </p>>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+  </div>
+</div>
+</div>
+</div> -->
+      <hr>
+
+      <footer>
+        <p>&copy; MyIT 2017</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="MyScript.js"></script>
+  </body>
+</html>
